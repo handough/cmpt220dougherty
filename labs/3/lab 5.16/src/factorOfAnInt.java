@@ -7,18 +7,20 @@ public class factorOfAnInt {
 		System.out.println("Enter a number: ");
 		int number = input.nextInt();
 		
-		System.out.println("The factors of " + number + " are: ");
-		
-		for (int i = 2; i <= number; i++) {
-			while (number % i == 0) {
-				number = number / i;
-				i++;
+		for (int factor = 2; factor * factor <= number; factor++) {
+			while (number % factor == 0) {
+				System.out.print(factor + ", ");
+				number = number / factor;
 			}
-			System.out.println(number);
 		}
 		
+		if (number > 1) {
+			System.out.print(number);
+		}
+		else {
+			System.out.println();
+		}
 		//closing scanner
 		input.close();
 	}
-
 }
