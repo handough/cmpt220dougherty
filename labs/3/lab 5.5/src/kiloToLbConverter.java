@@ -7,7 +7,7 @@ public class kiloToLbConverter {
 		
 		System.out.println("Kilograms  Pounds  |  Pounds  Kilograms");
 		
-		while (i < 200) {
+		while (i < 200) { // JA: The left hand side should increment by 2. The right hand side by 5.
 			i++;
 			double kilograms = i * 0.454;
 			double pounds = i * 2.2;
