@@ -26,3 +26,6 @@
 prj/driver_proj0/.project
 
 *.fdt
+*.ini
+*.class
+*.bak

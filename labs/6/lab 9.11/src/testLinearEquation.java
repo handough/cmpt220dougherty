@@ -18,21 +18,23 @@ public class testLinearEquation {
 		int ff = scanner.nextInt();
 		
 		//creating linear equation
-		LinearEquation le = new LinearEquation(0, 0, 0, 0, 0, 0);
+// JA		LinearEquation le = new LinearEquation(0, 0, 0, 0, 0, 0);
+
+		LinearEquation le = new LinearEquation(aa, bb, cc, dd, ee, ff);
 		
 		//getting a-f
-		le.getA(aa);
+/*		le.getA(aa);
 		le.getB(bb);
 		le.getC(cc);
 		le.getD(dd);
 		le.getE(ee);
 		le.getF(ff);
 		
-		int xx = ((ee * dd) - (bb * ff) / (aa * dd) - (bb * cc));
-		int yy = ((aa * ff) - (ee * cc) / (aa * dd) - (bb * cc));
+		double xx = ((ee * dd) - (bb * ff)) / ((aa * dd) - (bb * cc)); 
+		double yy = ((aa * ff) - (ee * cc)) / ((aa * dd) - (bb * cc)); */
 		
-		le.getX(xx);
-		le.getY(yy);
+		le.getX();
+		le.getY();
 		
 		//testing if equation is solvable
 		if(le.isSolvable() == true){
@@ -40,9 +42,9 @@ public class testLinearEquation {
 		}
 		else{
 			//printing x
-			System.out.println("X is: " + xx);
+			System.out.println("X is: " + le.getX()); // JA
 			//printing y
-			System.out.println("Y is: " + yy);
+			System.out.println("Y is: " + le.getY()); // JA
 		}
 		
 		//closing scanner

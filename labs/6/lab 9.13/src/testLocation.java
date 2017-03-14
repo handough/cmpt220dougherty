@@ -21,8 +21,9 @@ public class testLocation {
         
 		scanner.close();
 		Location location = Location.locateLargest(ar, rows, columns);
-		location.getRow(rows);
-		location.getColumn(columns);
+		// JA: You don't need this
+// 		location.getRow(rows); 
+//		location.getColumn(columns);
 		System.out.println("The location of the largest element is: " + location.maxValue
 				+ " (" + location.row + ", " + location.column + ")");
 	}

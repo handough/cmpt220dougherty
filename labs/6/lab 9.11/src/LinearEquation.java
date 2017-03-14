@@ -1,8 +1,8 @@
 
 public class LinearEquation {
 	int a, b, c, d, e, f;
-	int x;
-	int y;
+	double x; // JA
+	double y; // JA
 	public LinearEquation(){
 		a = 0;
 		b = 0;
@@ -19,28 +19,28 @@ public class LinearEquation {
 		this.e = e;
 		this.f = f;	
 	}
-	public int getA(int newA){
-		a = newA;
+	public int getA(){//int newA){ // JA: You don't need to pass newA as an argument
+//		a = newA;
 		return a;
 	}
-	public int getB(int newB){
-		b = newB;
+	public int getB(){//int newB){
+//		b = newB;
 		return b;
 	}
-	public int getC(int newC){
-		c = newC;
+	public int getC(){//int newC){
+//		c = newC;
 		return c;
 	}
-	public int getD(int newD){
-		d = newD;
+	public int getD(){//int newD){
+//		d = newD;
 		return d;
 	}
-	public int getE(int newE){
-		e = newE;
+	public int getE(){//int newE){
+//		e = newE;
 		return e;
 	}
-	public int getF(int newF){
-		f = newF;
+	public int getF(){//int newF){
+//		f = newF;
 		return f;
 	}
 	public boolean isSolvable(){
@@ -49,12 +49,12 @@ public class LinearEquation {
 		}
 		return false;
 	}
-	public int getX(int x){
-		
+	public double getX(){//int x){ 
+		x = (e * d - b * f)/(a * d - b * c); // JA
 		return x;
 	}
-	public int getY(int y){
-		
+	public double getY(){//double y){
+		y = (a * f - e * c)/(a * d - b * c); // JA
 		return y;
 	}
 }

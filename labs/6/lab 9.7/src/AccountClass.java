@@ -3,11 +3,12 @@ public class AccountClass {
 	private int id;
 	double balance;
 	double annualInterestRate;
-	private Date dateCreated;
+	private Date dateCreated; // JA: This does not create the date object
 	double monthlyInterestRate = 0;
 	double monthlyInterest;
 	
 	public AccountClass(){
+		// JA: You had to create the date object here
 		id = 0;
 		balance = 0;
 		annualInterestRate = 0; 
