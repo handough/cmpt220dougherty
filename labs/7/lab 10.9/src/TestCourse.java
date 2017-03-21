@@ -7,9 +7,12 @@ public class TestCourse {
             c.addStudent("Student " + (i + 1));
             c.addStudent("Student " + (i + 1));
             c.addStudent("Student " + (i + 1));
+            c.dropStudent("student" + i);
         }
 		
 		String[] students = c.getStudents();
+		
+		System.out.println("The studnets in this course: " + students);
 	}
 }
 
