@@ -12,7 +12,7 @@ public class TestCourse {
 		
 		String[] students = c.getStudents();
 		
-		System.out.println("The studnets in this course: " + students);
+		System.out.println("The students in this course: " + java.util.Arrays.toString(students)); // JA: This prints the object only
 	}
 }
 

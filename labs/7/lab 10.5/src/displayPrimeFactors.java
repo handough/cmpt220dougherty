@@ -12,7 +12,7 @@ public class displayPrimeFactors {
         else{
             for(int i = 2; i <= (number); i++){
             	while (number % i == 0) {
-            		factors.push(number);
+            		factors.push(i); //JA: Here you have to push the factor (i)
             	    number /= i;
             	}
             }

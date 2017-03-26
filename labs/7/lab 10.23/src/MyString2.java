@@ -13,7 +13,8 @@ public class MyString2 {
 			index = 1; 
 
 		for (int i = 0; i < MyString2.s.length(); i++) {
-			if (MyString2.s.charAt(i) < s.charAt(i))
+			if (MyString2.s.charAt(i) < s.charAt(i))  //JA: If the lenght of the strings is not the same
+													 // JA: This might give you an out of bounds error
 				index = -(i + 1);
 			if (MyString2.s.charAt(i) > s.charAt(i))
 				index = i + 1;

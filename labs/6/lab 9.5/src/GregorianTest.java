@@ -1,6 +1,7 @@
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+// JA: Always add comments to your code
 public class GregorianTest {
 	public static void main(String[] args) {
 		GregorianCalendar calendar = new GregorianCalendar();
@@ -11,7 +12,7 @@ public class GregorianTest {
 		
 		System.out.println("Current time is: " + calendar.getTime());
 
-		calendar.setTimeInMillis(5000);
+		calendar.setTimeInMillis(5000); // JA: This was supposed to be 1234567898765L
 
 		System.out.println("After setting Time: " + calendar.getTime());
 		
