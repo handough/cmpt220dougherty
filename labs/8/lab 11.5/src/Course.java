@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+// JA: There is no test clas to test this
 public class Course {
 	private String courseName;
 	private ArrayList<String> students = new ArrayList<>();
