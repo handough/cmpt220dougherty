@@ -15,13 +15,13 @@ public class NumberFormatException {
 				result = Integer.parseInt(args[0]) + Integer.parseInt(args[2]);
 				break;
 			case '-': 
-				result = Integer.parseInt(args[0]) + Integer.parseInt(args[2]);
+				result = Integer.parseInt(args[0]) - Integer.parseInt(args[2]); // JA
 				break;
 			case '.': 
-				result = Integer.parseInt(args[0]) + Integer.parseInt(args[2]);
+				result = Integer.parseInt(args[0]) * Integer.parseInt(args[2]); // JA
 				break;
 			case '/': 
-				result = Integer.parseInt(args[0]) + Integer.parseInt(args[2]);
+				result = Integer.parseInt(args[0]) / Integer.parseInt(args[2]); // JA
 			
 			}
 			//Display result
