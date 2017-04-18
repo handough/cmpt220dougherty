@@ -8,7 +8,11 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 public class Gui extends JFrame {
 
-    private JLabel jLabel;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JLabel jLabel;
     private Timer timer;
     private boolean chromeShown;
 
@@ -16,7 +20,7 @@ public class Gui extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(800, 600);
         JPanel panel = new JPanel(new BorderLayout());
-        jLabel = new JLabel(new ImageIcon("/home/ottp/Downloads/chrome.png"));
+        jLabel = new JLabel(new ImageIcon(""));
         chromeShown = true;
 
         panel.add(jLabel);
