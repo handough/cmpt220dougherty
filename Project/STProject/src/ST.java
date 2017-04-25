@@ -1,4 +1,4 @@
-import java.awt.*; 
+import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 public class ST extends JFrame implements ActionListener{
@@ -36,6 +36,7 @@ public class ST extends JFrame implements ActionListener{
 		        	 JOptionPane.showMessageDialog(null,"Do exercise " + i + 
 				    		  " for 10 seconds.",
 				    		  "Nice work!", JOptionPane.PLAIN_MESSAGE);
+		        	 
 		        	 setVisible(true);
 		    	}
 	    	}
