@@ -47,8 +47,6 @@ class Circle extends GeometricObject {
     public boolean equals(Object obj) {
         return obj instanceof Circle && radius == ((Circle) obj).radius;
     }
-
-    /* Print the circle info */
     public void printCircle() {
         System.out.println("The circle is created " + getDateCreated() +
                 " and the radius is " + radius);

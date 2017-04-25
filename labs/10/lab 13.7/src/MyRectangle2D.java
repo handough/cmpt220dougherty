@@ -1,5 +1,4 @@
 import java.awt.Rectangle;
-
 public class MyRectangle2D extends GeometricObject {
 
     private static final int X = 0;
@@ -80,8 +79,6 @@ public class MyRectangle2D extends GeometricObject {
     public void setHeight(double height) {
         this.height = height;
     }
-
-    /** returns the perimeter of the rectangle. **/
     @Override
     public double getPerimeter() {
 
@@ -125,20 +122,13 @@ public class MyRectangle2D extends GeometricObject {
     public boolean contains(MyRectangle2D r2) {
         double xDistance = (r2.centerX > centerX) ? r2.centerX - centerX : centerX - r2.centerX;
         double yDistance = (r2.centerY > centerY) ? r2.centerY - centerY : centerY - r2.centerY;
-
-        // if the r2 is inside this rectangle
-        // this is only valid if the rectangles are parallel
         return (xDistance <= (width - r2.width) / 2 && yDistance <= (height - r2.height) / 2);
 
     }
 
     public boolean overlaps(MyRectangle2D r2) {
-        // subtract from the highest number
         double xDistance = (r2.centerX > centerX) ? r2.centerX - centerX : centerX - r2.centerX;
         double yDistance = (r2.centerY > centerY) ? r2.centerY - centerY : centerY - r2.centerY;
-
-        // if the r2 overlaps this rectangle
-        // this is only valid if the rectangles are parallel
         return (xDistance <= (width + r2.width) / 2 && yDistance <= (height + r2.height) / 2);
 
     }
