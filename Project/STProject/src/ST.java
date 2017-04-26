@@ -34,8 +34,9 @@ public class ST extends JFrame implements ActionListener{
 		    	for(int i = 1; i < 11; i++){
 	    			answer.setText("Restart?");
 		        	 JOptionPane.showMessageDialog(null,"Do exercise " + i + 
-				    		  " for 10 seconds.",
+				    		  " for 10 seconds. Time: ",
 				    		  "Nice work!", JOptionPane.PLAIN_MESSAGE);
+		        	 
 		        	 
 		        	 setVisible(true);
 		    	}
